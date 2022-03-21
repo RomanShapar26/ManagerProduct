@@ -13,7 +13,7 @@ class ManagerTest {
     private Repository repository = new Repository();
     private Manager manager = new Manager(repository);
 
-    Book firstBook = new Book(1, "Book1", 100, "Authore");
+    Book firstBook = new Book(1, "Book10", 100, "Authore");
     Book secondBook = new Book(2, "Book2", 150, "Authore2");
     Book thirdBook = new Book(3, "Book3", 200, "Authore3");
     Smartphone firstPhone = new Smartphone(4, "Smart1", 150_000, "Cantry1");
@@ -50,7 +50,7 @@ class ManagerTest {
     @Test
     public void shouldFindNameBook() {
         Product[] expected = new Product[]{firstBook};
-        Product[] actual = manager.searchBy("Book1");
+        Product[] actual = manager.searchBy("Book10");
 
         assertArrayEquals(expected, actual);
     }
