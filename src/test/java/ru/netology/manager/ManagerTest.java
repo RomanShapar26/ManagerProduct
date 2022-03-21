@@ -9,7 +9,8 @@ import ru.netology.repository.Repository;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ManagerTest {private Repository repository = new Repository();
+class ManagerTest {
+    private Repository repository = new Repository();
     private Manager manager = new Manager(repository);
 
     Book firstBook = new Book(1, "Book1", 100, "Authore");

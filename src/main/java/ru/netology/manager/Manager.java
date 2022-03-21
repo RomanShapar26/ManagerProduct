@@ -5,7 +5,8 @@ import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
 import ru.netology.repository.Repository;
 
-public class Manager { private Repository repository;
+public class Manager {
+    private Repository repository;
 
     public Manager(Repository repository) {
         this.repository = repository;
